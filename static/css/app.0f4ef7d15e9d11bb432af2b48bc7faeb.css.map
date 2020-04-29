@@ -1,1 +1,0 @@
-{"version":3,"sources":["app.0f4ef7d15e9d11bb432af2b48bc7faeb.css"],"names":[],"mappings":"AACA,MACE,WAAY,CACZ,UAAW,CACX,iBAAkB,CAClB,UACF","file":"app.0f4ef7d15e9d11bb432af2b48bc7faeb.css","sourcesContent":["\n#mapa{\r\n  height: 50vh;\r\n  width: 50vw;\r\n  position: absolute;\r\n  right: 20px;\n}\r\n"]}
