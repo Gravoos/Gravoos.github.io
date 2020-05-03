@@ -4,7 +4,7 @@
       <li>
         <h4 id="color-center">Filmy</h4>
       </li>
-      <li v-for="film in filmy" v-bind:key="film.id" id="color">
+      <li v-for="film in filmy" v-bind:key="film.id" id="colorr">
         <div class="chip">{{film.ocena}}</div>{{film.nazwa}}
  <!--       <router-link class="scondary-content" v-bind:to="{name:'bazaFimow'
         , params: {film_id: film.film_id}}"><i class="fa fa-eye"></i>
@@ -43,7 +43,7 @@ export default {
 </script>
 
 <style>
-#color{
+#colorr{
 color: rgb(255, 143, 50);
 font-size: 20px;
 }
