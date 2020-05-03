@@ -3,17 +3,17 @@
 <div class="nav-wrap">
   <nav>
             <div class="container">
-                     <ul class="right">
-                        <div><li v-if="isLoggedIn"><span class="nazwa">{{currentUser}}</span></li>
-                        <li v-if="isLoggedIn"><router-link to='/film'>Repertuar</router-link></li>
-                        <li v-if="isLoggedIn"><router-link to='/gps'>Najbliższe kino</router-link></li>
-                        <li v-if="isLoggedIn"><router-link to='/baza_uzytkownikow'>Baza flmów</router-link></li>
-                        <li v-if="isLoggedIn"><router-link to='/nowyFilm'>Nowy film</router-link></li>
-                        <li><router-link to='/opis'>Opis</router-link></li>
-                        <li><router-link to='/skladowe'>Skladowe</router-link></li>
-                        <li v-if="!isLoggedIn"><router-link to='/login'>Logowanie</router-link></li>
-                        <li v-if="!isLoggedIn"><router-link to='/register'>Rejestracja</router-link></li>
-                        <li v-if="isLoggedIn"><button v-on:click="logout" class="btn black">Wyloguj</button></li></div>
+                     <ul class="right" id="gold">
+                        <div id="list"><li id="gold2" v-if="isLoggedIn"><span class="nazwa">{{currentUser}}</span></li>
+                        <li id="gold2" v-if="isLoggedIn"><router-link to='/film'>Repertuar</router-link></li>
+                        <li id="gold2" v-if="isLoggedIn"><router-link to='/gps'>Najbliższe kino</router-link></li>
+                        <li id="gold2" v-if="isLoggedIn"><router-link to='/baza_uzytkownikow'>Baza flmów</router-link></li>
+                        <li id="gold2" v-if="isLoggedIn"><router-link to='/nowyFilm'>Nowy film</router-link></li>
+                        <li id="gold2" ><router-link to='/opis'>Opis</router-link></li>
+                        <li id="gold2" ><router-link to='/skladowe'>Skladowe</router-link></li>
+                        <li id="gold2" v-if="!isLoggedIn"><router-link to='/login'>Logowanie</router-link></li>
+                        <li id="gold2" v-if="!isLoggedIn"><router-link to='/register'>Rejestracja</router-link></li>
+                        <li id="gold2" v-if="isLoggedIn"><button v-on:click="logout" class="btn black">Wyloguj</button></li></div>
                     </ul>    
             </div>  
   </nav>
@@ -78,14 +78,14 @@ export default {
      align-items: center;
      margin: 0 auto;
    }
-   ul{
+   #gold{
      margin: 0 auto;
      padding: 0;
      text-align: center;
      align-items: center;
      
    }
-   ul li{
+   #gold2{
      list-style: none;
      display: inline-block;
      border: 1px solid gold;
