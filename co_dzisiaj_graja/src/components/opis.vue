@@ -42,6 +42,6 @@ export default {
 
 <style>
 .opis{
-    background-color: white;
+    color: white;
 }
 </style>

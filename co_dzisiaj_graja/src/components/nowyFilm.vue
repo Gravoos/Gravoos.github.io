@@ -5,13 +5,6 @@
             <form @submit.prevent='zapiszFilm' class='col s12'>
                 <div class="row">
                     <div class="input-field col s12">
-                        <input type="text" v-model="film_id"
-                        required class=white-text>
-                        <label> Film id# </label>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input-field col s12">
                         <input type="text" v-model="nazwa"
                         required class=white-text>
                         <label> Nazwa: </label>

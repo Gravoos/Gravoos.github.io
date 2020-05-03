@@ -7,9 +7,10 @@
       </li>
       <li v-for="film in filmy" v-bind:key="film.id" class="collection-item">
         <div class="chip">{{film.ocena}}</div>{{film.nazwa}}
-        <router-link class="scondary-content" v-bind:to="{name:'bazaFimow'
+ <!--       <router-link class="scondary-content" v-bind:to="{name:'bazaFimow'
         , params: {film_id: film.film_id}}"><i class="fa fa-eye"></i>
         </router-link>
+        -->
         </li>
     </ul>
   </div>

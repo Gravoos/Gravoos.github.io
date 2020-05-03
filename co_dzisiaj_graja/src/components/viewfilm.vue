@@ -5,7 +5,7 @@
       <div class="ui segment">
         <div class="field">
           <div class="ui right icon input large">
-            <input type="text" placeholder="Enter your address" v-model="coordinates" />
+            <input type="text" placeholder="Wprowadź adres" v-model="coordinates" />
                         <i class="dot circle link icon" @click="locatorButtonPressed"></i>
           </div>
         </div>
@@ -71,7 +71,7 @@ methods: {
 },
 addLocationsToGoogleMaps() {
 	var map = new google.maps.Map(this.$refs['map'], {
-    zoom: 15,
+    zoom: 14,
 		center: new google.maps.LatLng(this.lat, this.lng),
 		mapTypeId: google.maps.MapTypeId.ROADMAP
     });
@@ -98,6 +98,19 @@ google.maps.event.addListener(marker, "click", () => {
 <style>
 #mapa{
     float: left; 
+    width: 45vw;
+    height: 80vh;
+    margin:0 auto 20px auto;
+}
+#opcje{
+    width: 300px;
+    float:left; 
+
+}
+
+@media screen and (max-width: 1000px) {
+#mapa{
+    float: left; 
     width: 90vw;
     height: 300px;
 }
@@ -105,6 +118,7 @@ google.maps.event.addListener(marker, "click", () => {
     width: 300px;
     float:left; 
 
+}
 }
 </style>
 

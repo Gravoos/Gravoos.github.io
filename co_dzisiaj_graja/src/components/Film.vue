@@ -1,13 +1,10 @@
 
 <template>
     <div id ='Film'>
-        <h3>Film</h3>   
+        <h1 class="white-text center">Strona w budowie</h1>   
         <div class="field">
     <div> 
-        <input type="number" placeholder="Wprowadź godzinę" v-model="godzina"> 00 
-        <input type="number" placeholder="Wprowadź minuty"  v-model="godzina"> 00 
     </div> 
-    <button class="ui button" @click="findemovie">Znajdź filmy</button>
     </div>    
     <div ref="film"></div>
     </div>
